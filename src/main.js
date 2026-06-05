@@ -1,4 +1,6 @@
 import "./style.css";
+import heroImg from "./assets/bertoni-hero.png";
+import lineupImg from "./assets/bertoni-lineup-pose.png";
 
 // src/main.js
 
@@ -83,7 +85,7 @@ const initLiveStats = () => {
 document.querySelector("#app").innerHTML = `
 <section class="relative min-h-screen flex items-center overflow-hidden bg-slate-950 font-inter">
     <div class="absolute inset-0 z-0">
-        <div class="w-full h-full bg-cover bg-[position:75%_center] md:bg-top transform scale-105 animate-hero-bg" style="background-image: url('/src/assets/bertoni-hero.png');"></div>
+        <div class="w-full h-full bg-cover bg-[position:75%_center] md:bg-top transform scale-105 animate-hero-bg" style="background-image: url('${heroImg}');"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent hidden lg:block"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/20 lg:hidden"></div>
     </div>
@@ -114,7 +116,7 @@ document.querySelector("#app").innerHTML = `
             
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative w-full max-w-md aspect-[3/4] bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500 shadow-2xl transition-all duration-500 group cursor-pointer hover:shadow-[0_0_40px_rgba(245,158,11,0.15)]">
-                    <div class="w-full h-full bg-cover bg-center filter brightness-105 contrast-110 saturate-[0.7] group-hover:saturate-110 transition-all duration-700 ease-out group-hover:scale-108" style="background-image: url('/src/assets/bertoni-lineup-pose.png');"></div>
+                    <div class="w-full h-full bg-cover bg-center filter brightness-105 contrast-110 saturate-[0.7] group-hover:saturate-110 transition-all duration-700 ease-out group-hover:scale-108" style="background-image: url('${lineupImg}');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-90 group-hover:opacity-60 transition-opacity duration-500"></div>
                     <div class="absolute bottom-6 left-6 font-mono text-xs text-amber-500/60 uppercase tracking-widest transition-all group-hover:text-amber-400 group-hover:translate-x-1">
                         [ OFFICIAL PRO CARD / ID-2026 ]
@@ -328,8 +330,8 @@ document.querySelector("#app").innerHTML = `
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Card Asset 1 -->
-            <a href="/src/assets/bertoni-hero.png" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
-                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('/src/assets/bertoni-hero.png');"></div>
+            <a href="${heroImg}" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
+                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('${heroImg}');"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-90 group-hover:opacity-40 transition-opacity"></div>
                 
                 <!-- Badge Técnico Discreto Superior -->
@@ -344,8 +346,8 @@ document.querySelector("#app").innerHTML = `
             </a>
 
             <!-- Card Asset 2 -->
-            <a href="/src/assets/bertoni-hero.png" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
-                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('/src/assets/bertoni-hero.png');"></div>
+            <a href="${heroImg}" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
+                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('${heroImg}');"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-90 group-hover:opacity-40 transition-opacity"></div>
                 
                 <div class="absolute top-4 left-4 font-mono text-[9px] bg-slate-950/80 text-slate-400 border border-slate-800 px-2 py-0.5 rounded tracking-widest uppercase">
@@ -359,8 +361,8 @@ document.querySelector("#app").innerHTML = `
             </a>
 
             <!-- Card Asset 3 -->
-            <a href="/src/assets/bertoni-hero.png" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
-                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('/src/assets/bertoni-hero.png');"></div>
+            <a href="${heroImg}" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
+                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('${heroImg}');"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-90 group-hover:opacity-40 transition-opacity"></div>
                 
                 <div class="absolute top-4 left-4 font-mono text-[9px] bg-slate-950/80 text-slate-400 border border-slate-800 px-2 py-0.5 rounded tracking-widest uppercase">
@@ -374,8 +376,8 @@ document.querySelector("#app").innerHTML = `
             </a>
 
             <!-- Card Asset 4 -->
-            <a href="/src/assets/bertoni-hero.png" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
-                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('/src/assets/bertoni-hero.png');"></div>
+            <a href="${heroImg}" target="_blank" class="group relative aspect-square bg-slate-900 rounded-xl overflow-hidden border border-slate-900 hover:border-amber-500/50 transition-all duration-500 block shadow-2xl">
+                <div class="w-full h-full bg-cover bg-center filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out" style="background-image: url('${heroImg}');"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-90 group-hover:opacity-40 transition-opacity"></div>
                 
                 <div class="absolute top-4 left-4 font-mono text-[9px] bg-slate-950/80 text-slate-400 border border-slate-800 px-2 py-0.5 rounded tracking-widest uppercase">
