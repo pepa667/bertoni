@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Força o fundo escuro na página inteira e remove margens padrão */
+html, body {
+  background-color: #020617; /* Isso é o correspondente exato ao bg-slate-950 */
+  color: #f8fafc;            /* text-slate-50 pra garantir legibilidade */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;   /* Deixa o scroll macio ao clicar nos links */
+}
+
+/* Ajuste fino para a barra de rolagem não ficar destoando */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* bg-slate-800 */
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b; /* amber-500 pra dar o destaque que você pediu */
+}
+
+
+/* ==========================================================================
+   SISTEMA DE ANIMAÇÕES ULTRA-DYNAMICS (BERTONI PERFORMANCE PRO)
+   ========================================================================== */
+
+/* 1. Animações de Entrada (Trigger de Loading) */
+@keyframes heroZoomOut {
+  from { transform: scale(1.5) translateY(50px); filter: blur(50px); }
+  to { transform: scale(1.05) translateY(0); filter: blur(0); }
+}
+@keyframes textReveal {
+  from { opacity: 0; transform: translateY(100px) scale(0.8); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-hero-bg { 
+  animation: heroZoomOut 2s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+}
+.animate-fade-in-up { 
+  animation: textReveal 2s cubic-bezier(0.16, 1, 0.3, 1) forwards; 
+}
+
+/* 2. Efeitos Reativos Durante o Scroll (Suportado nos navegadores modernos) */
+@supports (animation-timeline: scroll()) {
+  @keyframes revealOnScroll {
+    from { opacity: 0; transform: translateY(1000px); filter: brightness(0); }
+    to { opacity: 1; transform: translateY(0); filter: brightness(1); }
+  }
+  @keyframes shrinkOverlay {
+    from { opacity: 0.9; }
+    to { opacity: 0.4; }
+  }
+  @keyframes growLine {
+    from { height: 0%; }
+    to { height: 100%; }
+  }
+
+  /* Aplica reveal suave conforme as seções entram na tela */
+  .scroll-reveal {
+    view-timeline-name: --section;
+    view-timeline-axis: block;
+    animation-name: revealOnScroll;
+    animation-fill-mode: both;
+    animation-timeline: --section;
+    animation-range: entry 10% contain 40%;
+  }
+
+  /* A linha da timeline cresce dinamicamente conforme você rola a página */
+  .scroll-timeline-line {
+    view-timeline-name: --timeline;
+    view-timeline-axis: block;
+    animation-name: growLine;
+    animation-fill-mode: both;
+    animation-timeline: --timeline;
+    animation-range: entry 5% exit 90%;
+  }
+}
+
+/* Fallback clássico caso o navegador não suporte animação de scroll */
+@media (prefixed-animation-timeline: none) {
+  .scroll-reveal { opacity: 1; transform: none; }
+}
+
+/* Assinatura Pepa.dev - Efeito de Inversão no Hover */
+footer a.group:hover {
+  color: #020617 !important; /* Cor do texto vira o slate-950 pra dar contraste com o fundo âmbar */
+}
