@@ -7,6 +7,21 @@
     <title>Bertoni Profile</title>
   </head>
   <body class="bg-slate-950">
+
+<div class="fixed top-6 right-6 z-50">
+  {{#if (includes pagePath "/br/")}}
+    <a href="/" class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-800 hover:border-amber-500 px-3 py-2 rounded-md shadow-2xl transition-all cursor-pointer">
+      <span class="text-xl">🇬🇧</span>
+      <span class="text-[10px] font-mono text-slate-400 font-bold uppercase tracking-widest">English</span>
+    </a>
+  {{else}}
+    <a href="/br/" class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-800 hover:border-amber-500 px-3 py-2 rounded-md shadow-2xl transition-all cursor-pointer">
+      <span class="text-xl">🇧🇷</span>
+      <span class="text-[10px] font-mono text-slate-400 font-bold uppercase tracking-widest">Português</span>
+    </a>
+  {{/if}}
+</div>
+
     <div id="app">
       
       <section class="relative min-h-screen flex items-center overflow-hidden font-inter">
