@@ -3,13 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite --host",
+  "prebuild": "mkdir -p br && cp index.html br/index.html",
+  "build": "vite build",
+  "postbuild": "rm -rf br"
+},
   "devDependencies": {
-    "vite": "^8.0.12"
+    "vite": "^8.0.12",
+    "vite-plugin-handlebars": "^2.0.3"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",

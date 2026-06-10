@@ -1,0 +1,70 @@
+{
+  "lang": "pt-BR",
+  "hero": {
+    "badge": "// RUMO A DUBLIN 2026",
+    "title": "BERTONI",
+    "description": "A força bruta encontra a precisão. Terceira Linha de Elite, pronto para dominar os gramados europeus.",
+    "cta": "Fale com o Atleta"
+  },
+  "stats": {
+    "badge": "// REGISTRO DE SELEÇÃO",
+    "title": "Estatísticas Operacionais",
+    "desc": "Dados físicos validados para a temporada do circuito de Dublin.",
+    "position_label": "Posição Principal",
+    "position_val": "Terceira Linha / Flanker",
+    "weight_label": "Massa Corporal",
+    "weight_val": "108 kg (Massa Magra)",
+    "nat_label": "Nacionalidade",
+    "nat_val": "Brasileiro (Janela Europeia)",
+    "tackle_label": "Eficiência de Tackle",
+    "tackle_val": "94.2% Concluídos",
+    "indices_title": "// ÍNDICES DE FORÇA FISIOLÓGICA",
+    "idx_1": "Impacto e Quebra de Linha de Ganho",
+    "idx_2": "Recuperação e Carga Aeróbica (Work Rate)"
+  },
+  "profile": {
+    "badge": "// PERFIL E POSICIONAMENTO",
+    "title": "A Evolução do",
+    "span": "Terceira Linha",
+    "desc": "Surgido nos gramados mais físicos e disputados, Bertoni consolidou sua reputação através de uma mentalidade implacável de impacto e resiliência. Atuando na terceira linha, ele combina a velocidade de um back com a força bruta necessária para ditar o ritmo do scrum.",
+    "card_1_title": "Presença de Ruck Cega",
+    "card_1_desc": "Velocidade de reação superior para garantir turnovers e estabilizar a posse sob extrema pressão física.",
+    "card_2_title": "Metros Avançados",
+    "card_2_desc": "Capacidade explosiva de quebrar a primeira linha de tackle e continuar gerando momentum positivo em campo.",
+    "card_3_title": "Liderança de Pack",
+    "card_3_desc": "Voz ativa na coordenação defensiva e na engrenagem dos forwards, ditando agressividade com inteligência tática.",
+    "card_4_title": "Dossier de Cobertura",
+    "card_4_desc": "Leitura de jogo apurada para cobrir o campo profundo e neutralizar chutes táticos adversários."
+  },
+  "expanded": {
+    "badge": "// MÉTRICAS EXPANDIDAS",
+    "title": "Performance e Volume de Jogo",
+    "metric_1": "Tackles Dominantes",
+    "metric_2": "Offloads de Sucesso",
+    "metric_3": "Turnovers Conquistados",
+    "metric_4": "Minutos Jogados"
+  },
+  "timeline": {
+    "badge": "// CALENDÁRIO OPERACIONAL",
+    "title": "Planejamento Estratégico 2026",
+    "q1_title": "Aclimatração e Camp de Elite",
+    "q1_desc": "Integração aos centros de treinamento de alta performance na Irlanda. Foco em otimização metabólica e força reativa para suportar o clima europeu.",
+    "q2_title": "Janela de Matchplay Internacional",
+    "q2_desc": "Inserção nos principais torneios regionais e amistosos de exibição de alto nível. Teste de carga e entrosamento tático no circuito de Dublin."
+  },
+  "investment": {
+    "title": "Pronto para Investimento <br>e Parcerias de Elite",
+    "desc": "Conecte sua marca ao topo do desempenho esportivo. Estamos abrindo cotas exclusivas de patrocínio corporativo para a jornada em Dublin.",
+    "cta": "Solicitar Media Kit Completo"
+  },
+  "media": {
+    "badge": "// VISUAL DOSSIER",
+    "insta": "/ ACOMPANHE NO INSTAGRAM",
+    "title": "Recursos de Imprensa e Mídia",
+    "desc": "[ DISTRIBUIÇÃO DE ARQUIVOS EM ALTA DENSIDADE. CLIQUE PARA ABRIR A FOTOGRAFIA CINEMATOGRÁFICA ORIGINAL. ]"
+  },
+  "footer": {
+    "sub": "// ATHLETE BRAND INFRASTRUCTURE",
+    "rights": "© 2026 BERTONI PROJECT. TODOS OS DIREITOS RESERVADOS."
+  }
+}

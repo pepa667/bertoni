@@ -1,0 +1,70 @@
+{
+  "lang": "en",
+  "hero": {
+    "badge": "// DUBLIN BOUND 2026",
+    "title": "BERTONI",
+    "description": "Brute force meets precision. Elite Flanker, ready to dominate European pitches.",
+    "cta": "Contact the Athlete"
+  },
+  "stats": {
+    "badge": "// SELECTION REGISTRY",
+    "title": "Operational Stats",
+    "desc": "Physical data validated for the Dublin circuit season.",
+    "position_label": "Primary Position",
+    "position_val": "Flanker / Back Row",
+    "weight_label": "Body Mass",
+    "weight_val": "108 kg (Lean Mass)",
+    "nat_label": "Nationality",
+    "nat_val": "Brazilian (European Window)",
+    "tackle_label": "Tackle Efficiency",
+    "tackle_val": "94.2% Completed",
+    "indices_title": "// PHYSIOLOGICAL STRENGTH INDICES",
+    "idx_1": "Impact and Gainline Success Rate",
+    "idx_2": "Recovery and Work Rate"
+  },
+  "profile": {
+    "badge": "// PROFILE & POSITIONING",
+    "title": "The Evolution of the",
+    "span": "Back Row",
+    "desc": "Emerging from the most physical and highly contested pitches, Bertoni consolidated his reputation through an implacable mindset of impact and resilience. Operating in the back row, he combines a back's speed with the brute force required to dictate the scrum's tempo.",
+    "card_1_title": "Blindside Ruck Presence",
+    "card_1_desc": "Superior reaction speed to secure turnovers and stabilize possession under extreme physical pressure.",
+    "card_2_title": "Metres Gained",
+    "card_2_desc": "Explosive capacity to break the first tackle line and maintain positive momentum on the field.",
+    "card_3_title": "Pack Leadership",
+    "card_3_desc": "Active voice in defensive coordination and forward mechanics, dictating aggressiveness with tactical intelligence.",
+    "card_4_title": "Coverage Dossier",
+    "card_4_desc": "Sharp game reading to cover deep ground and neutralize opposition tactical kicks."
+  },
+  "expanded": {
+    "badge": "// EXPANDED METRICS",
+    "title": "Performance & Workload Volume",
+    "metric_1": "Dominant Tackles",
+    "metric_2": "Successful Offloads",
+    "metric_3": "Turnovers Won",
+    "metric_4": "Minutes Played"
+  },
+  "timeline": {
+    "badge": "// OPERATIONAL TIMELINE",
+    "title": "Strategic Planning 2026",
+    "q1_title": "Acclimatization & Elite Camp",
+    "q1_desc": "Integration into high-performance training centers in Ireland. Focus on metabolic optimization and reactive strength to endure the European climate.",
+    "q2_title": "International Matchplay Window",
+    "q2_desc": "Insertion into top regional tournaments and high-level exhibition matches. Workload testing and tactical cohesion in the Dublin circuit."
+  },
+  "investment": {
+    "title": "Ready for Investment<br>and Elite Partnerships",
+    "desc": "Connect your brand to the pinnacle of athletic performance. We are opening exclusive corporate sponsorship tiers for the journey in Dublin.",
+    "cta": "Request Full Media Kit"
+  },
+  "media": {
+    "badge": "// VISUAL DOSSIER",
+    "insta": "/ FOLLOW ON INSTAGRAM",
+    "title": "Press & Media Resources",
+    "desc": "[ HIGH-DENSITY ASSET DISTRIBUTION. CLICK TO OPEN ORIGINAL CINEMATIC PHOTOGRAPHY. ]"
+  },
+  "footer": {
+    "sub": "// ATHLETE BRAND INFRASTRUCTURE",
+    "rights": "© 2026 BERTONI PROJECT. ALL RIGHTS RESERVED."
+  }
+}
