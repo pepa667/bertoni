@@ -19,6 +19,15 @@ document.getElementById('lang-toggle')?.addEventListener('click', () => {
 /**
  * Sistema de Performance Base e Telemetria (Bertoni Performance Pro)
  * Desenvolvido por PEPA.DEV
+ * - Animação de contadores e barras de progresso ativada ao entrar na viewport
+ * - Fácil de usar: basta adicionar classes e data-attributes nos elementos HTML
+ * - Suporte para números inteiros e decimais, com easing suave
+ * - Observação eficiente usando IntersectionObserver para ativar animações apenas quando necessário
+ * - Recomendado para estatísticas, métricas de desempenho, ou qualquer número que precise de destaque visual
+ * - Personalizável via CSS para se adequar ao estilo do seu site
+ * - Exemplo de uso:
+ *   <div class="counter-up" data-target="1500" data-float="false">0</div>
+ *   <div class="progress-fill" data-width="80%"></div>
  */
 const initLiveStats = () => {
   const counters = document.querySelectorAll(".counter-up");
