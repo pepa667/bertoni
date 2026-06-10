@@ -1,11 +1,11 @@
 import "@/src/style.css"; // Aponta direto para o style.css na raiz, independente de onde o main.js estiver!
-import heroImg from "@/src/assets/bertoni-hero.png"; 
+import heroImg from "@/src/assets/bertoni-hero.png";
 import lineupImg from "@/src/assets/bertoni-lineup-pose.png";
 
 
 document.getElementById('lang-toggle')?.addEventListener('click', () => {
   const isBr = window.location.pathname.startsWith('/br');
-  
+
   if (isBr) {
     localStorage.setItem('user-lang', 'en');
     window.location.pathname = '/';

@@ -13,9 +13,8 @@ export default defineConfig(({ command }) => {
       tailwindcss(),
 
       handlebars({
-        context(pagePath, rawContext) {
-          const currentUrl = rawContext?.req?.url || pagePath || "";
-          if (currentUrl.includes("/br/") || currentUrl.includes("lang=br")) {
+        context(pagePath) {
+          if (pagePath === "/br/index.html") {
             return { ...ptTexts, pagePath: "/br/index.html" };
           }
           return { ...enTexts, pagePath };
@@ -29,11 +28,18 @@ export default defineConfig(({ command }) => {
       }),
 
       {
-        name: "vite-plugin-dev-rewrite-br",
+        name: "vite-plugin-dev-preview-br",
+        apply: "serve",
+        enforce: "pre",
         configureServer(server) {
-          server.middlewares.use((req, res, next) => {
-            if (req.url === "/br" || req.url === "/br/") {
-              req.url = "/index.html?lang=br";
+          server.middlewares.use(async (req, res, next) => {
+            if (req.url === "/br" || req.url === "/br/" || req.url === "/br/index.html") {
+              const html = fs.readFileSync(resolve(__dirname, "index.html"), "utf-8");
+              const transformed = await server.transformIndexHtml("/br/index.html", html);
+              res.statusCode = 200;
+              res.setHeader("content-type", "text/html; charset=utf-8");
+              res.end(transformed);
+              return;
             }
             next();
           });
