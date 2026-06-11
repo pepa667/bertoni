@@ -1,5 +1,11 @@
 {
   "lang": "en",
+  "meta": {
+    "title": "Bertoni Profile | Performance Connected",
+    "description": "High-performance digital solutions and telemetry analysis.",
+    "locale": "en_US",
+    "url": "https://bertoni.com"
+  },
   "hero": {
     "badge": "// DUBLIN BOUND 2026",
     "title": "BERTONI",
