@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { resolve } from "path";
 import handlebars from "vite-plugin-handlebars";
 import fs from "fs";
+// import globeIcon from "./src/assets/globe.gif"; // Importa o gif aqui!
 
 const enTexts = JSON.parse(fs.readFileSync("./locales/en.json", "utf-8"));
 const ptTexts = JSON.parse(fs.readFileSync("./locales/pt.json", "utf-8"));

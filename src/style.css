@@ -83,6 +83,17 @@ html, body {
   }
 }
 
+/* World icon animation */
+@keyframes globe-motion {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+
 /* Fallback clássico caso o navegador não suporte animação de scroll */
 @media (prefixed-animation-timeline: none) {
   .scroll-reveal { opacity: 1; transform: none; }
