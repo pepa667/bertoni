@@ -1,6 +1,6 @@
 import "@/src/style.css"; // Aponta direto para o style.css na raiz, independente de onde o main.js estiver!
-import heroImg from "@/src/assets/bertoni-hero.png";
-import lineupImg from "@/src/assets/bertoni-lineup-pose.png";
+import heroImg from "@/src/assets/bertoni-hero.webp";
+import lineupImg from "@/src/assets/bertoni-lineup-pose.webp";
 
 
 document.getElementById('lang-toggle')?.addEventListener('click', () => {
@@ -102,7 +102,7 @@ const injectDynamicAssets = () => {
                 ASSET_0${i} // RAW
             </div>
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                <span class="font-mono text-[10px] text-amber-400 tracking-wider">[ OPEN FULL RES JPG ]</span>
+                <span class="font-mono text-[10px] text-amber-400 tracking-wider">[ OPEN FULL RES PHOTO ]</span>
                 <span class="text-white text-xs font-bold font-mono">↓ DOWNLOAD</span>
             </div>
         </a>`;
